@@ -277,15 +277,5 @@ def auto_find_solution():
 
 # enter to the program
 if __name__ == '__main__':
-    #auto_find_solution()
-    file_name = "p08.csv"
-    population_number = 100
-    generation_number = 100
-    crossing_chance = 0.7
-    mutation_chance = 0.02
-    selection_type = 't'  # 't' or 'r'
-    tournament_size = 0.4  # range (0, 1)
-
-    result = proceed_genetic_algorithm("/data/single/", file_name, selection_type, tournament_size, population_number, generation_number,
-                                       crossing_chance, mutation_chance)
-    save_to_CSV(file_name, result, selection_type, tournament_size, population_number, generation_number, crossing_chance, mutation_chance)
+    auto_find_solution()
+    
